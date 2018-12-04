@@ -1,0 +1,38 @@
+<!--index.wxml-->
+
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class='body'>
+  <view class='indexbg'>
+    <view class='pickerview'>
+      <picker bindchange="bindPickerChange" value="{{storeIndex}}" range-key="storeName" range="{{userStoreList}}">
+        <text>{{userStoreList[storeIndex].storeName}}</text>
+
+        <image class='icondown' src='/img/wxl_icon@3x.png'></image>
+      </picker>
+    </view>
+    <image src='{{tools.imgUrl+userStoreList[storeIndex].storeImg}}' class='header'></image>
+  </view>
+  <view class='box'>
+    <view class='boxtitle'>
+      <view class='titlespan'></view>
+      <text>数据报表</text>
+      <image src='/img/wt_icon@3x.png' bindtap='toExplain'></image>
+    </view>
+    <view class='boxbody'>
+      <view class='dataitem'>
+        <view class='datanumber'>{{dataBoard.totalMoney}}</view>
+        <view class='datatxt'>今日收入</view>
+      </view>
+      <view class='splitline'></view>
+      <view class='dataitem'>
+        <view class='datanumber'>{{dataBoard.totalNum}}</view>
+        <view class='datatxt'>总用户量</view>
+      </view>
+      <view class='splitline'></view>
+      <view class='dataitem'>
+        <view class='datanumber'>{{dataBoard.totalNewUserNum}}</view>
+        <view class='datatxt'>新增会员</view>
+      </view>
+    </view>
+  </view>
+</view>

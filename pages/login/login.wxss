@@ -1,0 +1,134 @@
+/* pages/login/login.wxss */
+
+.signin {
+  height: 100%;
+  background: url(https://www.heyqun.net/storehtml/img/xcxbg.png) no-repeat #488199;
+  background-size: 100% auto;
+  /* background-origin: 0 0; */
+  background-position: -1px, 0;
+  /* background-position-x: -35px; */
+  color: rgba(255, 255, 255, 0.8);
+  overflow: auto;
+}
+
+/*  文字由背景图片展示 */
+
+/* .singlogo {
+  display: block;
+  background: url(https://www.heyqun.net/storehtml/img/wed_login_icon_logo.png) no-repeat;
+  background-size: contain;
+  min-width: 100px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 17.28px;
+  color: #fff;
+  padding-left: 37px;
+  margin: 24rpx 48rpx;
+} */
+
+.signin-info {
+}
+
+.signin-info text {
+  display: block;
+}
+
+.signin-info .p {
+  color: #bde0d8;
+  font-size: 13px;
+}
+
+.signin-info .h1 {
+  font-size: 28px;
+  color: #bde0d8;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.logopanel text {
+  margin: 0 0 10px;
+  font-size: 18px;
+  float: none;
+  width: auto;
+  padding: 0;
+  background: none;
+  color: #bde0d8;
+}
+
+.signinpanel {
+  margin: 0 48rpx;
+  overflow: auto;
+}
+
+.subform {
+  max-width: 370px;
+  margin: 350rpx auto 0;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0 0 36px 0 rgba(52, 203, 169, 0.20);
+  -webkit-box-shadow: 0 0 36px 0 rgba(52, 203, 169, 0.20);
+  box-shadow: 0 0 36px 0 rgba(52, 203, 169, 0.20);
+  -moz-border-radius: 31.68px;
+  -webkit-border-radius: 31.68px;
+  border-radius: 31.68px;
+  padding: 42rpx 72rpx;
+}
+
+.subform .subtitle {
+  font-size: 31.68px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.subform .subtitle_E {
+  opacity: 0.5;
+  font-size: 15.84px;
+  text-align: center;
+  color: #31b194;
+}
+
+.subform .weui-cell {
+  padding: 20rpx 0;
+}
+
+.subform .weui-input {
+  border-bottom: 1rpx solid #f8f8f8;
+  font-size: 14.52px;
+  color: #333;
+}
+
+.weui-cell__ft image {
+  display: block;
+  width: 38rpx;
+  height: 38rpx;
+}
+
+checkbox-group .weui-cell__bd {
+  text-align: right;
+}
+
+.mysignbtn {
+  display: block;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: url(https://www.heyqun.net/storehtml/img/wed_login_icon_anniu@2x.png) no-repeat;
+  background-size: 100% auto;
+  height: 130rpx;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 60rpx;
+}
+

@@ -1,0 +1,20 @@
+<!--pages/courselist/course/course.wxml-->
+
+<import src="/template/template.wxml" />
+<view class='body'>
+
+  <view class="weui-cell serchbox">
+    <view class="weui-cell__bd">
+      <picker class="picker" mode="date" value="{{startTime}}" bindchange="bindDateChange">
+        <text>{{startTime}}</text>
+        <image class='icondown' src='/img/xl_btn@3x.png'></image>
+      </picker>
+    </view>
+  </view>
+
+  <view class='cardlist'>
+    <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" wx:key="item.id">
+      <template is="courseitem" data="{{...item}}" />
+    </block>
+  </view>
+</view>

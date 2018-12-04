@@ -1,0 +1,110 @@
+
+.card {
+  display: block;
+  border-radius: 6px;
+  /* height: 284rpx; */
+  background: #fff;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-bottom: 30rpx;
+}
+
+.cardtop {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 66rpx;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  padding: 0 32rpx;
+}
+
+.userspan {
+  display: inline-block;
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 20rpx;
+  margin-right: 8rpx;
+  color: #fff;
+  border-radius: 6rpx;
+  padding: 0 6rpx;
+}
+
+.userspan.warn {
+  background: #fec26c;
+}
+
+.userspan.err {
+  background: #fe8882;
+}
+
+.userspan+text {
+  font-size: 24rpx;
+  color: #333;
+  font-weight: 600;
+  height: 32rpx;
+  line-height: 32rpx;
+}
+
+.cardmain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30rpx;
+}
+
+.cardmain view {
+  width: auto;
+  height: 100%;
+}
+
+.name, .price {
+  font-family: 'DIN-Medium';
+  font-weight: bold;
+  font-size: 48rpx;
+  color: #333;
+  text-align: right;
+  line-height: 1;
+}
+
+.time {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.usetimes {
+  font-size: 28rpx;
+  color: #ff6680;
+}
+
+.course .user {
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 48rpx;
+}
+
+.changebtn {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  padding: 12rpx 22rpx;
+  border-radius: 44rpx;
+  background-image: linear-gradient(-135deg, #53e4c3 0%, #34cba9 100%);
+  box-shadow: 0 2px 16px 0 rgba(52, 203, 169, 0.50);
+  margin-top: 30rpx;
+}
+
+.cancelbtn {
+  margin-top: 36rpx;
+  font-size: 28rpx;
+  color: #34cba9;
+  text-align: center;
+}
+
+.coursename {
+  font-weight: bold;
+  font-size: 34rpx;
+  color: #333;
+  line-height: 1;
+}

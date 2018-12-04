@@ -1,0 +1,76 @@
+<wxs src="../utils/tools.wxs" module="tools" />
+<template name="card">
+  <view class='card'>
+    <image class='cardtip' src='{{tools.formateCardtype(cardType)}}'></image>
+    <view class='cardtop'>
+      <view class='userspan warn'>持有人</view>
+      <text>{{nickName}}</text>
+    </view>
+    <view class='cardmain'>
+      <view>
+        <text class='name'>{{cardName}}</text>
+        <view class='time'>
+          <text>下单时间：{{tools.dateFormat(buyTime, "Y/M/D ")}}</text>
+        </view>
+        <view class='time'>
+          <text>有效期至：{{tools.dateFormat(invalidTime, "Y/M/D ")}}</text>
+        </view>
+      </view>
+      <view>
+        <view class='price' wx:if="{{amount}}">¥{{amount}}</view>
+        <view class='usetimes'>剩余 {{useableNum}} 次</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+
+<template name="courseorder">
+  <view class='card course'>
+    <image class='cardtip' src='{{tools.formateCardtype(cardType)}}'></image>
+    <view class='cardtop'>
+      <view class='userspan err'>老师</view>
+      <text>{{cardType}}</text>
+    </view>
+    <view class='cardmain'>
+      <view>
+        <text class='name'>{{tools.dateFormat(startTime, "h:m")}}-{{tools.dateFormat(startTime, "h:m")}}</text>
+        <view class='coursename'>
+          <text>{{courseName}}</text>
+        </view>
+        <view class='user'>
+          <text>订购人：{{user.nickname}}</text>
+        </view>
+        <view class='time'>
+          <text>上课日期：{{tools.dateFormat(startTime, "Y-M-D")}}</text>
+        </view>
+      </view>
+      <view>
+        <view class='price'>¥{{amount}}</view>
+        <view class='changebtn' wx:if="{{status == 1||status==3}}" data-index="{{index}}" data-id="{{id}}" bindtap='changeCourse'>调换课程</view>
+        <view wx:if="{{status == 1||status==3}}" class='cancelbtn' data-id="{{id}}" bindtap='cancelCourse'>取消订单</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name="courseitem">
+  <view class='card courseitem'>
+    <image class='cardtip' src='{{tools.formateCardtype(cardType)}}'></image>
+    <view class='cardtop'>
+      <view class='userspan err'>老师</view>
+      <text>{{user.nickname}}</text>
+    </view>
+    <view class='cardmain'>
+      <view>
+        <text class='name'>{{title}}</text>
+        <view class='user'>
+          <text>报名人数：{{total_num}}</text>
+        </view>
+      </view>
+      <view>
+        <view class='coursetime'>开课时间：{{tools.dateFormat(courseTime.startTime, "h:m")}}</view>
+      </view>
+    </view>
+  </view>
+</template>

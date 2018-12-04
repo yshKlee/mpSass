@@ -1,0 +1,31 @@
+<!--pages/admin/admin.wxml-->
+<view class='body'>
+  <view class='box'>
+    <view class='boxtitle'>
+      <view class='titlespan'></view>
+      <text>订单管理</text>
+    </view>
+    <view class='boxbody'>
+      <view class='adminitem'bindtap='toCourse'>
+        <image src='/img/xbkdd_icon@2x.png'></image>
+        <view>小班课订单</view>
+      </view>
+      <view class='adminitem' bindtap='toCard'>
+        <image src='/img/tckdd_icon@2x.png'></image>
+        <view>套餐卡订单</view>
+      </view>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='boxtitle'>
+      <view class='titlespan'></view>
+      <text>课程管理</text>
+    </view>
+    <view class='boxbody'>
+      <view class='adminitem' bindtap='toCourseList'>
+        <image src='/img/xbk_icon@2x.png'></image>
+        <view>小班课</view>
+      </view>
+    </view>
+  </view>
+</view>

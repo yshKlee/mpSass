@@ -1,0 +1,10 @@
+/* pages/order/course/course.wxss */
+@import '../card/card.wxss';
+
+.serchbox .weui-cell__hd {
+  font-weight: bold;
+}
+
+.pickertext {
+  font-weight: bold;
+}

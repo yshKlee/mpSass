@@ -1,0 +1,85 @@
+<!--pages/order/course/changecourse/changecourse.wxml-->
+<wxs src="../../../../utils/tools.wxs" module="tools" />
+<view class='body'>
+  <view class="weui-cell serchbox">
+    <view class="weui-cell__bd">
+      <picker class="picker" mode="date" value="{{startTime}}" bindchange="bindDateChange">
+        <text>{{startTime}}</text>
+        <image class='icondown' src='/img/xl_btn@3x.png'></image>
+      </picker>
+    </view>
+  </view>
+  <view class='courselist'>
+    <view class="weui-cells weui-cells_after-title">
+      <view wx:if="{{radioItems.length<=0}}">当前日期没有课程~</view>
+      <radio-group bindchange="radioChange">
+      <!-- <radio-group bindchange="{{item.shiftStatus==1?radioChange:null}}"> -->
+        <!-- enable 不可用class -->
+        <!-- <label class="weui-cell weui-check__label {{item.shiftStatus==1?'':'enable'}} {{item.checked?'checked':''}}" wx:for="{{radioItems}}" wx:key="id"> -->
+        <label class="weui-cell weui-check__label {{item.checked?'checked':''}}" wx:for="{{radioItems}}" wx:key="id">
+           <radio class="weui-check" value="{{item.id}}" checked="{{item.checked}}"/>
+
+          <view class="weui-cell__hd weui-check__hd_in-checkbox">
+            <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+            <icon class="weui-icon-checkbox_success" color="#fff" type="success" size="23" wx:if="{{item.checked}}"></icon>
+          </view>
+          <view class="weui-cell__bd columnbd">
+            <view>
+              <text>上课时间：</text>
+              <text>{{tools.dateFormat(item.courseTime.startTime, "h:m")}}-{{tools.dateFormat(item.courseTime.endTime, "h:m")}}</text>
+            </view>
+            <view>
+              <text>课程：</text>
+              <text>{{item.title}}</text>
+            </view>
+            <view>
+              <text>教室：</text>
+              <text>{{item.courseRoom.roomName}}</text>
+            </view>
+            <view>
+              <text>购买人数：</text>
+              <text>{{item.total_num}}</text>
+               <!-- / {{item.max_num}} -->
+            </view>
+          </view>
+          <view class="weui-cell__ft">
+            <view>{{item.cardType}}</view>
+          </view>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view>
+<view class='bottombtn'>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="showAction">确定</button>
+  </view>
+
+</view>
+<!-- 需要再带上js modalConfirm ，modalConfirm 和触发js 请搜索 modalHidden 以及json的component引用-->
+<zy-modal title='调换课程' hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel" confirmText="确认">
+  <view class='modaltitle'>
+    只有一次调课机会哦~
+    确定调课?
+  </view>
+  <view>时间：
+    <!--  需要修改 -->
+    <text>{{tools.dateFormat(preItem.startTime, "Y/M/D h:m")}}-{{tools.dateFormat(preItem.startTime, "h:m")}}；</text>
+  </view>
+  <view>课程：
+    <text>{{preItem.courseName}}；</text>
+  </view>
+  <view>老师：
+    <text>{{preItem.cardType}}</text>
+  </view>
+  <view class='modaltitle'>调换至</view>
+  <view>时间：
+    <text>{{tools.dateFormat(checkedItem.courseTime.startTime, "Y/M/D h:m")}}-{{tools.dateFormat(checkedItem.courseTime.endTime, "h:m")}}；</text>
+  </view>
+  <view>课程：
+    <text>{{checkedItem.title}}；</text>
+  </view>
+  <view>老师：
+    <text>{{checkedItem.cardType}}</text>
+  </view>
+</zy-modal>

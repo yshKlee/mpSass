@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": " 调换课程",
+  "usingComponents": {
+    "zy-modal": "/template/zy-modal/zy-modal"
+  }
+}

@@ -1,0 +1,44 @@
+<!--pages/login/login.wxml-->
+<view class='body'>
+  <view class='signin'>
+    <!-- <view class='singlogo'>
+      小黑裙
+    </view> -->
+    <view class='signinpanel'>
+      <!-- 信息 ps:文字由背景图片展示 -->
+      <!-- <view class='signin-info'>
+        <view class="logopanel">
+          <text>小黑裙瑜伽</text>
+        </view>
+        <text class='h1'>管理应用信息平台</text>
+        <text class='p'>Management Application Information Platform</text>
+        
+      </view> -->
+      <!-- 登陆表单 -->
+      <view class='subform'>
+        <view class='subtitle'>登录</view>
+        <view class='subtitle_E'>LOGIN</view>
+        <form bindsubmit="formSubmit">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name='nickname' value='{{username}}' placeholder="请输入用户名" />
+            </view>
+            <view class="weui-cell__ft">
+              <image mode='' src='https://www.heyqun.net/storehtml/img/user.png'></image>
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" confirm-type='done' password='true' name='password' value='{{password}}' placeholder="请输入密码" />
+            </view>
+            <view class="weui-cell__ft">
+              <image mode='scaleToFill' src='https://www.heyqun.net/storehtml/img/lock.png'></image>
+            </view>
+          </view>
+          <button form-type="submit" class="mysignbtn"></button>
+        </form>
+      </view>
+    </view>
+
+  </view>
+</view>

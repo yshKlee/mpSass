@@ -1,0 +1,40 @@
+/**index.wxss**/
+
+@import '/template/box.wxss';
+
+.body{
+  background: #f2f2f2;
+}
+.indexbg {
+  background: url(https://www.heyqun.net/storehtml/img/md_bg_img.png) no-repeat;
+  background-size: 100%;
+  height: 440rpx;
+}
+
+.pickerview {
+  display: inline-block;
+  margin: 0 48rpx;
+  padding: 26rpx 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.header {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.box {
+  height: 284rpx;
+  margin: -142rpx 48rpx 0;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(216, 216, 216, 0.50);
+  border-radius: 5px;
+}
+

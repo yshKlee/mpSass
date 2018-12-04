@@ -1,0 +1,37 @@
+/* pages/courselist/course/course.wxss */
+@import '/pages/order/card/card.wxss';
+
+.serchbox picker {
+  width: 200px;
+  vertical-align: middle;
+}
+
+.serchbox {
+  background: #fff;
+}
+
+.icondown {
+  line-height: 48rpx;
+}
+
+.inlinebtn {
+  display: inline-block;
+  /* line-height: 48rpx; */
+}
+
+.courseitem .name {
+  font-size: 48rpx;
+  color: #333;
+}
+
+.coursetime {
+  font-size: 34rpx;
+  color: #666;
+  margin-top: 86rpx;
+}
+
+.courseitem .user {
+  font-size: 34rpx;
+  color: #666;
+  margin-top: 24rpx;
+}

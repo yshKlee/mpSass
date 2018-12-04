@@ -1,0 +1,36 @@
+<!--pages/card/card.wxml-->
+
+<import src="/template/template.wxml" />
+<view class='body'>
+  <view class='switchbox'>
+    <view class="weui-cells">
+      <view class="weui-cell serchbox">
+        <view class='weui-cell__hd'>套餐名称</view>
+        <view class="weui-cell__bd">
+          <view class='searchinput'>
+            <input class="weui-input" bindconfirm='setInputVal' placeholder-style="color:#D8D8D8;" value='{{value}}' placeholder="请输入套餐名称" />
+            <image src='/img/delete_icon@2x.png' bindtap='cancelInput'></image>
+          </view>
+        </view>
+      </view>
+      <view class="weui-cell serchbox">
+        <view class='weui-cell__hd'>下单时间</view>
+        <view class="weui-cell__bd">
+          <picker class="picker" mode="date" value="{{startTime}}" bindchange="bindDateChange">
+            <button type="default">{{startTime}}</button>
+          </picker>
+          <picker bindchange="bindPickerChange" value="{{index}}" range-key="name" range="{{array}}">
+            <text>{{array[index].name}}</text>
+            <image class='icondown' src='/img/xl_btn@3x.png'></image>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='cardlist'>
+    <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" wx:key="item.id">
+      <template is="card" data="{{...item}}" />
+    </block>
+
+  </view>
+</view>

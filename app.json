@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/admin/admin",
+    "pages/order/card/card",
+    "pages/order/course/course",
+    "pages/courselist/course/course",
+    "pages/order/course/changecourse/changecourse",
+    "pages/explain/explain"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#34CBA9",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/tabicon/hom2_icon@3x.png",
+        "selectedIconPath": "/img/tabicon/home_icon@3x.png"
+      },
+      {
+        "pagePath": "pages/admin/admin",
+        "text": "管理",
+        "iconPath": "/img/tabicon/gl_icon@3x.png",
+        "selectedIconPath": "/img/tabicon/gl2_icon@3x.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

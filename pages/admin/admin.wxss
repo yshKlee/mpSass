@@ -1,0 +1,37 @@
+/* pages/admin/admin.wxss */
+@import '/template/box.wxss';
+
+.body {
+  background: #f6f7f7;
+  overflow: auto;
+}
+
+.box {
+  height: 284rpx;
+  margin: 30rpx 30rpx 0;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(216, 216, 216, 0.50);
+  border-radius: 5px;
+}
+
+.boxbody {
+  justify-content: flex-start;
+}
+
+.adminitem image {
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin: 0 auto 16rpx;
+}
+
+.adminitem {
+  min-width: 120rpx;
+  margin-right: 48rpx;
+  text-align: center;
+}
+
+.adminitem view {
+  font-size: 24rpx;
+  color: #333;
+}

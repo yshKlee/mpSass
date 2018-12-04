@@ -1,0 +1,7 @@
+<!--pages/explain/explain.wxml-->
+<view class='body'>
+  <view>今日收入/总用户量/新增会员说明：</view>
+  <text>1.收入记为当天所有订单的总和</text>
+  <text>2.总用户量记为我们场馆的所有会员数（在我们场馆上过课记为场馆会员）</text>
+  <text>3.新增会员记为我们场馆今日的新增会员数（今日在我们场馆上课的新会员）</text>
+</view>

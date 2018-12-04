@@ -1,0 +1,116 @@
+/* pages/order/course/changecourse/changecourse.wxss */
+@import '../../card/card.wxss';
+
+.serchbox picker {
+  width: 200px;
+  vertical-align: middle;
+}
+
+.serchbox {
+  background: #fff;
+}
+
+.icondown {
+  line-height: 48rpx;
+}
+
+/* 列表 */
+
+.courselist {
+  margin: 30rpx 30rpx 0;
+}
+
+.courselist .weui-cells {
+  background: transparent;
+}
+
+.courselist .weui-cell {
+  padding: 30rpx;
+  background: #fff;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 30rpx;
+  border-radius: 12rpx;
+}
+
+.columnbd {
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  font-size: 28rpx;
+  color: #030303;
+}
+
+.columnbd  view {
+  margin: 4rpx 0;
+}
+
+.columnbd text {
+  text-align: justify;
+  display: inline-block;
+  min-width: 140rpx;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.columnbd text+text {
+  text-align: left;
+  color: #666;
+  display: inline-block;
+  width: auto;
+}
+
+.weui-cell__ft {
+  font-size: 34rpx;
+  color: #333;
+}
+
+/* 不可用样式 */
+
+.enable .columnbd {
+  color: #d8d8d8;
+}
+
+.enable .columnbd text+text {
+  font-weight: normal;
+  color: #d8d8d8;
+}
+
+.enable .weui-cell__ft {
+  color: #d8d8d8;
+}
+
+/* 选中样式 */
+
+.courselist .weui-cell.checked {
+  background-color: #53e4c3;
+  color: #fff;
+}
+
+.courselist .weui-cell.checked .columnbd,
+.courselist .weui-cell.checked .columnbd text+text,
+.courselist .weui-cell.checked .weui-cell__ft {
+  color: #fff;
+}
+
+/* 底部按钮 */
+
+.bottombtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 -2px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+.weui-btn-area {
+  margin: 14rpx 48rpx;
+}
+
+.weui-btn-area button {
+  font-size: 28rpx;
+  color: #fff;
+  background: #34cba9;
+  box-shadow: 0 2px 16px 0 rgba(52, 203, 169, 0.50);
+  border-radius: 60rpx;
+  line-height: 84rpx;
+}

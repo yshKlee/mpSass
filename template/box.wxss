@@ -1,0 +1,69 @@
+/* box */
+@import '/app.wxss';
+.box {
+  height: 284rpx;
+  margin: 0 48rpx;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(216, 216, 216, 0.50);
+  border-radius: 5px;
+}
+
+.boxtitle {
+  display: flex;
+  padding: 0 32rpx;
+  align-items: center;
+  justify-content: flex-start;
+  height: 94rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.titlespan {
+  width: 8rpx;
+  height: 32rpx;
+  border-radius: 4rpx;
+  background-image: linear-gradient(59deg, #34cba9 0%, #65d591 100%);
+  margin-right: 16rpx;
+}
+
+.titlespan+text {
+  font-weight: 600;
+  font-size: 34rpx;
+  color: #333;
+  margin-right: 6rpx;
+}
+
+.boxtitle image {
+  display: block;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.boxbody {
+  height: 190rpx;
+  padding: 0 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.splitline {
+  display: block;
+  width: 2rpx;
+  height: 40rpx;
+  background: #d8d8d8;
+}
+
+.datanumber {
+  font-weight: bold;
+  font-family:'DIN-Blod';
+  font-size: 48rpx;
+  color: #34cba9;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.datatxt {
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+}

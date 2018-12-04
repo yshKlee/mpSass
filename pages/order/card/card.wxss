@@ -1,0 +1,96 @@
+/* pages/card/card.wxss */
+@import '/template/cardtemplate.wxss';
+
+.body {
+  background: #f6f7f7;
+}
+
+.switchbox {
+  overflow: auto;
+}
+
+.serchbox .weui-cell__hd {
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.searchinput image {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.searchinput {
+  margin-left: 20rpx;
+  width: calc(450rpx - 20rpx*2 - 20rpx);
+  height: 60rpx;
+  padding: 0 20rpx;
+  line-height: 60rpx;
+  background: #f5f6f5;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.searchinput input {
+  flex: 1;
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+
+.serchbox picker {
+  margin-left: 20rpx;
+  display: inline-block;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #d8d8d8;
+}
+
+.serchbox picker text {
+  font-weight: bold;
+  font-family: 'DIN-Medium';
+  font-size: 32rpx;
+  color: #333;
+}
+
+.serchbox picker button {
+  font-family: 'DIN-Medium';
+  color: #333;
+  font-size: 24rpx;
+}
+
+.weui-cells {
+  border: none;
+  margin-top: 0;
+}
+
+.weui-cells::before, .weui-cells::after {
+  content: none;
+}
+
+.weui-cells {
+  padding-bottom: 10rpx;
+}
+
+.weui-cell__bd {
+  display: flex;
+  align-items: center;
+}
+
+/* carditem */
+
+.cardlist {
+  margin: 15px 16px 0;
+}
+
+.price+.usetimes {
+  margin-top: 0;
+}
+
+.usetimes {
+  margin-top: 20rpx;
+}
